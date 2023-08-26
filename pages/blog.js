@@ -12,7 +12,7 @@ export async function getStaticProps(context) {
 }
 
 export default function Blog({ navigation }) {
-  const pages = [{ name: 'Blog', href: '/blog', current: true }, { name: 'atproto.com/blog', href: 'https://atproto.com/blog', current: true}]
+  const pages = [{ name: 'atproto.com/blog', href: 'https://atproto.com/blog', current: true}, { name: 'ブログ', href: '/blog', current: true }]
   const firstPage = navigation.blog[0]
   return (
     <div>

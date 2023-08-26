@@ -1,9 +1,9 @@
 ---
-title: クイックスタート・ガイド
+title: クイックスタート
 summary: atproto APIを使い始める
 ---
 
-# クイックスタート・ガイド
+# クイックスタート
 
 Bluesky PBLLCのプロトコルは`typescript`で実装されています。APIは[こちら](https://www.npmjs.com/package/@atproto/api?activeTab=readme)から利用できます。
 
@@ -29,7 +29,8 @@ await agent.login({
   password: process.env.BLUESKY_PASSWORD!,
 });
 ```
-To use this agent to create a post: 
+
+このエージェントを使って投稿を作成します :
 
 ```Typescript
 await agent.post({
@@ -37,18 +38,18 @@ await agent.post({
 });
 ```
 
-View more sample API calls in the [package documentation](https://www.npmjs.com/package/@atproto/api).
+パッケージ・ドキュメント](https://www.npmjs.com/package/@atproto/api)で、API呼び出しのサンプルを見ることができます。
 
-## More Protocol Implementations
+## その他のプロトコル実装
 
-For libraries in more languages, visit the [community projects page](/community/projects#protocol-implementations).
+より多くの言語のライブラリについては、[コミュニティのプロジェクトページ](/community/projects#protocol-implementations)をご覧ください。
 
+# ブログ 
 
-# Blog
+開発者向けのブログが公開されています。
 
-We publish blogs for a developer audience [here](https://atproto.com/blog).
+- [atproto.com/blog](https://atproto.com/blog)
 
-We publish blog posts for a general audience on the Bluesky site [here](https://blueskyweb.xyz/blog), for example:
 - [Federation Architecture Overview](https://blueskyweb.xyz/blog/5-5-2023-federation-architecture)
 - [Algorithmic Choice](https://blueskyweb.xyz/blog/3-30-2023-algorithmic-choice)
 - [Composable Moderation](https://blueskyweb.xyz/blog/4-13-2023-moderation)

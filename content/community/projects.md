@@ -1,23 +1,21 @@
 ---
-title: コミュニティ・プロジェクト
-summary: サードパーティのコミュニティ開発者によって構築されています
+title: コミュニティ
+summary: サードパーティはコミュニティの開発者によって構築されています
 ---
 
-# コミュニティ・プロジェクト
+# コミュニティ
 
-これはコミュニティ・プロジェクトの一部のリストです。このページへのプロジェクトの提出方法については、説明をお読みください。
+これはコミュニティの一部のリストです。このページへのプロジェクトの提出方法については、[説明](/community/projects#%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E6%8F%90%E5%87%BA)をお読みください。
 
-[here](/community/projects#submit-your-project).
+### アプリパスワード
 
-### App Passwords
+アカウントのセキュリティのため、サードパーティクライアントを使用する場合は、`Settings` > `Advanced` > `App passwords` で[アプリパスワード](/specs/atp#app-password)を生成してください。
 
-For the security of your account, when using any third-party clients, please generate an [app password](/specs/atp#app-passwords) at Settings > Advanced > App passwords.
+アプリパスワードはユーザーのアカウントパスワードとほとんど同じ機能を持ちますが、アカウントの削除やアカウントの移行などの破壊的なアクションは制限されています。また、追加のアプリパスワードを作成することも制限されています。
 
-App passwords have most of the same abilities as the user's account password, but they're restricted from destructive actions such as account deletion or account migration. They are also restricted from creating additional app passwords.
+[免責事項](/community/projects#%E5%85%8D%E8%B2%AC%E4%BA%8B%E9%A0%85)をお読みください。
 
-Read our disclaimer [below](/community/projects#disclaimer).
-
-## AT Protocol Implementations
+## ATプロトコルの実装
 
 - [atproto](https://github.com/bluesky-social/atproto) (Typescript): this is the leading protocol implementation, developed by Bluesky PBLLC
 - [indigo](https://github.com/bluesky-social/indigo) (Go): not stable
@@ -37,16 +35,16 @@ Read our disclaimer [below](/community/projects#disclaimer).
 - [blue_factory](https://github.com/mackuba/blue_factory) (Ruby): implementation of a feed generator service
 - [FishyFlip](https://github.com/drasticactions/FishyFlip) (csharp): new, not stable
 
-## Tutorials and Guides
+## チュートリアルとガイド
 
 - [atproto docs in Japanese](https://github.com/encrypteduse/atproto-website-docs-jp) by [@encrypteduse](https://github.com/encrypteduse)
 - [atproto starter kit](https://github.com/aliceisjustplaying/atproto-starter-kit), TypeScript/Node template, by [@alice.bsky.sh](https://bsky.app/profile/did:plc:by3jhwdqgbtrcc7q4tkkv3cf)
 - [How to build a Bluesky bot using ATProto and OpenAI API](https://ashevat.medium.com/how-to-build-a-bluesky-bot-using-atproto-and-openai-api-77a26a154b) by [@amir.blue](https://bsky.app/profile/did:plc:ua6usdc4hzvzjsokoenba4zt)
 - [Bluesky bot tutorial](https://github.com/emilyliu7321/bluesky-emoji-bot/blob/main/TUTORIAL.md) by [@emily.bsky.team](https://bsky.app/profile/did:plc:vjug55kidv6sye7ykr5faxxn)
 
-## Clients
+## クライアント
 
-The official Bluesky app is available on the [iOS App](https://apps.apple.com/us/app/bluesky-social/id6444370199) and [Google Play](https://play.google.com/store/apps/details?id=xyz.blueskyweb.app&hl=en_US) stores as well as on [desktop](https://bsky.app/).
+Blueskyの公式アプリは、[Apple Store](https://apps.apple.com/us/app/bluesky-social/id6444370199)と[Google Play](https://play.google.com/store/apps/details?id=xyz.blueskyweb.app&hl=en_US)、および[desktop](https://bsky.app/)でご利用いただけます。
 
 ### Web
 
@@ -94,7 +92,7 @@ The official Bluesky app is available on the [iOS App](https://apps.apple.com/us
 - [bluesky_cli](https://github.com/myConsciousness/atproto.dart/tree/main/packages/bluesky_cli) (Dart) developed by [@shinyakato.dev](https://bsky.app/profile/did:plc:iijrtk7ocored6zuziwmqq3c)
 - [blue-sky-cli](https://github.com/wesbos/blue-sky-cli) (Typescript) developed by [@wesbos](https://bsky.app/profile/did:plc:etdjdgnly5tz5l5xdd4jq76d)
 
-## Bridges
+## ブリッジ
 
 - [SkyBridge](https://github.com/videah/skybridge) to use Mastodon apps with Bluesky by [@videah.net](https://bsky.app/profile/did:plc:inze6wrmsm7pjl7yta3oig77)
 - [Bluestream](https://bluestream.deno.dev/), RSS feed generator for Bluesky by [@kawarimidoll.bsky.social](https://bsky.app/profile/did:plc:okalufxun5rpqzdrwf5bpu3d)
@@ -103,7 +101,7 @@ The official Bluesky app is available on the [iOS App](https://apps.apple.com/us
 - [granary](https://granary.io/), converts `app.bsky` objects to/from ActivityStreams, RSS, Atom, HTML, and more, by [@snarfed.org](https://bsky.app/profile/did:plc:fdme4gb7mu7zrie7peay7tst)
 - [Sky Follower Bridge](https://github.com/kawamataryo/sky-follower-bridge), instantly find and follow Twitter followers on Bluesky, by [@kawamataryo.bsky.social](https://bsky.app/profile/did:plc:hcp53er6pefwijpdceo5x4bp)
 
-## Custom Feeds
+## カスタムフィード
 
 To build your own custom feed, you can use Bluesky's official feed generator starter kit [here](https://github.com/bluesky-social/feed-generator).
 - [Skyfeed](https://skyfeed.app), a dashboard-like experience with a custom feed builder, by [@redsolver.dev](https://bsky.app/profile/did:plc:odo2zkpujsgcxtz7ph24djkj)
@@ -114,7 +112,7 @@ To build your own custom feed, you can use Bluesky's official feed generator sta
 - [bluesky-feeds-rb](https://github.com/mackuba/bluesky-feeds-rb), a complete example of a custom feed service in Ruby, by [@mackuba.eu](https://bsky.app/profile/did:plc:oio4hkxaop4ao4wz2pp3f4cr)
 - [Bluesky Social Feeds](https://blueskyfeeds.com), a tool to search and build custom feeds without code or regex, by [@blueskyfeeds.com](https://bsky.app/profile/did:plc:eubjsqnf5edgvcc6zuoyixhw)
 
-## Stats
+## 統計
 
 - [ATScan](https://atscan.net) by [@tree.fail](https://bsky.app/profile/did:plc:524tuhdhh3m7li5gycdn6boe)
 - [Bluesky social graph generator](https://bsky.jazco.dev/) by [@jaz.bsky.social](https://bsky.app/profile/did:plc:q6gjnaw2blty4crticxkmujt)
@@ -122,9 +120,10 @@ To build your own custom feed, you can use Bluesky's official feed generator sta
 - [Bluesky user growth](https://vqv.app/stats/chart) by [@m3ta.uk](https://bsky.app/profile/did:plc:ui7jfx3hdkfb4qr4ncfbqgvv) and [vqv.app](https://bsky.app/profile/did:plc:md6i2csjmkfoie6u4ot4kjmn)
 - [Skyfeed Builder Feed Stats](https://stats.skyfeed.me/)
 
-## Custom domains and handles
+## カスタムドメイン
 
-You can purchase and manage a custom domain through Bluesky [here](https://account.bsky.app/). Read more about this service [here](https://blueskyweb.xyz/blog/7-05-2023-namecheap).
+カスタムドメインは、[こちら](https://account.bsky.app/)から購入・管理できます。このサービスについての詳細は[こちら](https://blueskyweb.xyz/blog/7-05-2023-namecheap)をご覧ください。
+
 - [Skyname](https://skyna.me/), register a free unique username for your Bluesky account, by [@darn.fish](https://bsky.app/profile/did:plc:7qw3ldjppmwmtjoak3egctdb)
 - [Open Handles](https://github.com/SlickDomique/open-handles), an app to let others create a handle with your domains, by [@domi.zip](https://bsky.app/profile/did:plc:7bwr7mioqql34n2mrqwqypbz)
 - [swifties.social](https://swifties.social/), claim a `swifties.social` handle, by [@mozzius.dev](https://bsky.app/profile/did:plc:p2cp5gopk7mgjegy6wadk3ep)
@@ -138,7 +137,7 @@ You can purchase and manage a custom domain through Bluesky [here](https://accou
 - [Skyfall](https://github.com/mackuba/skyfall), a Ruby gem for streaming events from the firehose, by [@mackuba.eu](https://bsky.app/profile/did:plc:oio4hkxaop4ao4wz2pp3f4cr)
 
 
-## Other Tools
+## その他
 
 - Skylink [Chrome](https://skylinkchrome.com) and [Firefox](https://skylinkff.com/) extension to detect DIDs while browsing the web, by [@adhdjesse.com](https://bsky.app/profile/did:plc:f55kfczvcsjlaota4ep2xvhx)
 - [Skyspaces](https://www.skyspaces.net/) audio rooms by [@geeken.tv](https://bsky.app/profile/did:plc:lbjhpk3a473cuufkenjcer3v)
@@ -154,7 +153,7 @@ You can purchase and manage a custom domain through Bluesky [here](https://accou
 - [Skythread](http://mackuba.github.io/skythread/), a tool for reading threads in a tree layout, by [@mackuba.eu](https://bsky.app/profile/did:plc:oio4hkxaop4ao4wz2pp3f4cr)
 - [SkyPicker](https://skypicker.site/), a tool to do raffles in Bluesky by [@joseli.to](https://bsky.app/profile/did:plc:uorsid6pyxlcoggl3b65mzfy)
 
-## Bots
+## ボット
 
 - [MTA Alerts](https://bsky.app/profile/did:plc:jvhf36loasspmffobuyfpopz) by [@ryanskinner.com](https://bsky.app/profile/did:plc:ubz4oedvsb7dsuncqi5jb7o2)
 - [Limerick bot](https://bsky.app/profile/did:plc:kqz6gh5hiukhcfg7i3hgpzzh) by [@gar.lol](https://bsky.app/profile/did:plc:4r2qco7eb644cpyga5r6vdib)
@@ -172,12 +171,15 @@ You can purchase and manage a custom domain through Bluesky [here](https://accou
 - [Score My Wordle](https://bsky.app/profile/did:plc:wems3hfqqjsfenrrd325q6zo) ([GitHub](https://github.com/shaneafsar/wordlescorer/)), provides Wordle stats and scores across Bluesky, Mastodon, and Twitter, by [@shaneafsar.com](https://bsky.app/profile/did:plc:ksl6jmkhz7qli2ywletvvm2z)
 - [Rijden de Treinen](https://bsky.app/profile/did:plc:ijgkhvxpubqao7yiwtbzpyrm), posts train disruptions in the Netherlands, by [@djiwie.bsky.social](https://bsky.app/profile/did:plc:kvbm4te3fersn2nrxukajsql)
 
-### Disclaimer
+### 免責事項
 
-This list of third-party developer clients is provided for informational purposes only. These clients are not affiliated with the Bluesky PBLLC company, unless otherwise indicated, and we do not endorse or guarantee their performance or security. Users should be aware that logging into their accounts through these third-party clients carries inherent risks, including the possibility of account compromise or data loss. It is important to only use third-party clients that are trusted and reputable. We strongly advise users to exercise caution and use these third-party clients at their own risk. Only log in to your account through a third-party client if you trust the developer and are confident in their ability to safeguard your account information.
+このサードパーティデベロッパークライアントのリストは、情報提供のみを目的としています。これらのクライアントは、特に明記されていない限り、Bluesky PBLLCとは無関係であり、その性能や安全性を保証するものではありません。ユーザーは、これらのサードパーティクライアントを通じてアカウントにログインすることは、アカウントの漏洩やデータ損失の可能性を含む固有のリスクを伴うことを認識する必要があります。信頼でき、評判の高いサードパーティクライアントのみを使用することが重要です。当社は、利用者が注意を払い、自己責任でこれらのサードパーティークライアントを使用することを強くお勧めします。開発者を信頼し、アカウント情報を保護する能力に自信がある場合にのみ、サードパーティクライアントを通じてアカウントにログインしてください。
 
-We are not responsible for any damage, loss, or unauthorized access to your account that may result from using these third-party clients. By using any of these clients, you acknowledge and accept these risks and limitations.
+当社は、これらのサードパーティクライアントを使用した結果生じる可能性のある損害、損失、またはアカウントへの不正アクセスについて責任を負いません。これらのクライアントを使用することにより、お客様はこれらのリスクと制限を認識し、承諾するものとします。
 
-### Submit your project
+### プロジェクトの提出
 
-To submit or remove your project to this list, you may open a pull request [here](https://github.com/bluesky-social/atproto-website). Please follow the existing formatting as a guideline. Alternatively, you can email projects@atproto.com with a link to your project and your handle.
+このリストにあなたのプロジェクトを投稿したり削除したりするには、[github](https://github.com/bluesky-social/atproto-website)にプルリクエストしてください。ガイドラインとして、既存の書式に従ってください。あるいは、あなたのプロジェクトへのリンクとハンドルネームを添えて`projects@atproto.com`にメールしてください。
+
+- [github.com/bluesky-social/atproto-website](https://github.com/bluesky-social/atproto-website)
+

@@ -27,6 +27,11 @@ const SiteSections = [
 		name: 'ブログ',
 		href: '/blog',
 		icon: PencilIcon
+	},
+	{
+		name: 'スタート',
+		href: 'https://bluesky-jp.github.io/welcome-bluesky/docs/intro',
+		icon: PencilIcon
 	}
 ]
 

@@ -1,9 +1,9 @@
 ---
-title: コミュニティ・グループ
+title: グループ
 summary: atprotoの開発者コミュニティに参加しよう
 ---
 
-# コミュニティ・グループ
+# グループ
 
 [matrix](https://matrix.to/#/%23bluesky-dev:matrix.org) : Blueskyチームは開発者向けの`Matrix`ルームを`matrix.org`に作成しているので、そこから参加できます。
 
