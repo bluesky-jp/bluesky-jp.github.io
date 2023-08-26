@@ -57,7 +57,7 @@ export default function Footer() {
           ))}
         </div>
         <p className="mt-8 text-center text-base text-gray-500">
-          &copy;Bluesky Japan
+          &copy; bluesky-jp
         </p>
       </div>
     </footer>

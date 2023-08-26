@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.flex.justify-start a {
+	font-size:25px;
+	padding-left:10px;
+	color: #2563eb;
+}
+
+span.bskyjp-icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 4px;
+	background: linear-gradient(#2563eb, #25d8eb7d);
+}
+
 mark {
   background-color: rgb(219, 234, 254);
   color: rgb(29, 78, 216);

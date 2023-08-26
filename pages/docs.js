@@ -13,14 +13,14 @@ export async function getStaticProps(context) {
 }
 
 export default function Docs({ navigation }) {
-  const pages = [{ name: 'Docs', href: '/docs', current: true }]
+  const pages = [{ name: 'Docs', href: '/docs', current: true }, { name: 'atproto.com/docs', href: 'https://atproto.com/docs', current: true}]
   const firstPage = navigation.guides[0]
   return (
     <div>
       <Meta title="Docs" />
       <Header />
       <div className="max-w-4xl mx-auto px-4 py-4 sticky lg:relative top-0 bg-white z-10">
-        <Breadcrumbs pages={pages} />
+        <Breadcrumbs pages={pages} /> 
       </div>
 
       <div className="max-w-4xl mx-auto px-4">

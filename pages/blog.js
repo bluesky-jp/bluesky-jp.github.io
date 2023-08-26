@@ -12,7 +12,7 @@ export async function getStaticProps(context) {
 }
 
 export default function Blog({ navigation }) {
-  const pages = [{ name: 'blog', href: '/blog', current: true }]
+  const pages = [{ name: 'Blog', href: '/blog', current: true }, { name: 'atproto.com/blog', href: 'https://atproto.com/blog', current: true}]
   const firstPage = navigation.blog[0]
   return (
     <div>
@@ -21,7 +21,6 @@ export default function Blog({ navigation }) {
       <div className="max-w-4xl mx-auto px-4 py-4 sticky lg:relative top-0 bg-white z-10">
         <Breadcrumbs pages={pages} />
       </div>
-
       <div className="max-w-4xl mx-auto px-4">
         <Links pages={navigation.blog} />
       </div>

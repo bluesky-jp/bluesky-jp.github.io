@@ -31,7 +31,7 @@ export async function getStaticProps(context) {
 
 export default function Guide({ navigation, file }) {
   const pages = [
-    { name: 'Dev Blog', href: '/blog', current: false },
+    { name: 'Blog', href: '/blog', current: false },
     { name: file.title, href: file.path, current: true },
   ]
   return (
