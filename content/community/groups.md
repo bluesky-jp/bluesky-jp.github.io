@@ -1,13 +1,13 @@
 ---
-title: Community Groups
-summary: Get connected to the atproto dev community.
+title: コミュニティ・グループ
+summary: atprotoの開発者コミュニティに参加しよう
 ---
 
-# Community Groups
+# コミュニティ・グループ
 
-The Bluesky team monitors a Matrix chat for developers, which you can join [here](https://matrix.to/#/%23bluesky-dev:matrix.org).
+[matrix](https://matrix.to/#/%23bluesky-dev:matrix.org) : Blueskyチームは開発者向けの`Matrix`ルームを`matrix.org`に作成しているので、そこから参加できます。
 
-Community members have also organized their own groups below:
+また以下のような地域のコミュニティがあります。
 
 - [Bluesky API Touchers](https://discord.gg/3srmDsHSZJ), a Discord server for developers
 - [Web0.club](https://www.web0.club/), a club for people interested in building on the open web

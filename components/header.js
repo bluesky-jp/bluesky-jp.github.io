@@ -12,48 +12,32 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faSquare } from '@fortawesome/free-solid-svg-icons'
 
-
-
 const SiteSections = [
-  {
-    name: 'Documentation',
-    href: '/docs',
-    icon: DocumentTextIcon,
-  },
-  {
-    name: 'Community',
-    href: '/community',
-    icon: ChatBubbleLeftRightIcon
-  },
-  {
-    name: 'Developer Blog',
-    href: '/blog',
-    icon: PencilIcon
-  }
+	{
+		name: 'ドキュメント',
+		href: '/docs',
+		icon: DocumentTextIcon,
+	},
+	{
+		name: 'コミュニティ',
+		href: '/community',
+		icon: ChatBubbleLeftRightIcon
+	},
+	{
+		name: 'ブログ',
+		href: '/blog',
+		icon: PencilIcon
+	}
 ]
 
 const ExternalLinks = [
   {
-    name: 'Twitter',
-    href: 'https://twitter.com/bluesky',
-    icon: ({ className }) => (
-      <FontAwesomeIcon icon={faTwitter} className={className} />
-    ),
-  },
-  {
-    name: 'GitHub',
-    href: 'https://github.com/bluesky-social',
+    name: 'gitHub',
+    href: 'https://github.com/bluesky-jp',
     icon: ({ className }) => (
       <FontAwesomeIcon icon={faGithub} className={className} />
     ),
   },
-  {
-    name: 'Bluesky Social',
-    href: 'https://bsky.app/profile/bsky.app',
-    icon: ({ className }) => (
-      <FontAwesomeIcon icon={faSquare} className={className} />
-    ),
-  }
 ]
 
 function classNames(...classes) {
@@ -78,10 +62,9 @@ export default function Header() {
       <header>
       <div className="flex items-center justify-between border-b-2 border-gray-100 px-4 sm:px-6 py-4 sm:py-6 md:justify-start md:space-x-10">
         <div className="flex justify-start">
+										<span class="bskyjp-icon"></span> 
           <Link href="/">
-            <a>
-              <img className="h-10 w-auto" src="/logo.jpg" alt="The AT Protocol homepage" />
-            </a>
+            <a>bluesky-jp</a>
           </Link>
         </div>
         <div className="-my-2 -mr-2 md:hidden">

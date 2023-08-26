@@ -1,11 +1,11 @@
 ---
-title: Protocol Overview
-summary: An introduction to the AT Protocol.
+title: プロトコルの概要
+summary: ATプロトコル入門
 ---
 
-# Protocol Overview
+# プロトコルの概要
 
-The **Authenticated Transfer Protocol**, aka **atproto**, is a federated protocol for large-scale distributed social applications. This document will introduce you to the ideas behind the AT Protocol.
+**Authenticated Transfer Protocol**, aka **atproto** は、大規模な分散型ソーシャル・アプリケーションのための連携プロトコルです。この文書では、ATプロトコルの背後にある考え方を紹介します。
 
 ## Identity
 

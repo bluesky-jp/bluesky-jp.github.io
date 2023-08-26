@@ -5,6 +5,9 @@ import Footer from '../components/footer'
 import Hero from '../components/hero'
 import Roadmap from '../components/roadmap'
 import CTA from '../components/cta'
+import axios from 'axios'
+import moment from "moment"
+import React from 'react'
 
 import {
   AtSymbolIcon,
@@ -12,26 +15,26 @@ import {
   ArrowsUpDownIcon,
 } from '@heroicons/react/24/outline'
 
-const features = [
-  {
-    name: 'Federated social',
-    description:
-      "Connect with anyone on any service that's using the AT Protocol.",
-    icon: AtSymbolIcon,
-  },
-  {
-    name: 'Algorithmic choice',
-    description:
-      'Control how you see the world through an open market of algorithms.',
-    icon: CodeBracketSquareIcon,
-  },
-  {
-    name: 'Portable accounts',
-    description:
-      'Change hosts without losing your content, your follows, or your identity.',
-    icon: ArrowsUpDownIcon,
-  },
-]
+//const features = [
+//  {
+//    name: '連合',
+//    description:
+//      "ATプロトコルを使用しているサービスであれば、誰とでも接続できます",
+//    icon: AtSymbolIcon,
+//  },
+//  {
+//    name: 'アルゴリズム',
+//    description:
+//      'オープンなアルゴリズム市場を通じて、世界の見方をコントロールできます',
+//    icon: CodeBracketSquareIcon,
+//  },
+//  {
+//    name: '移行',
+//    description:
+//      'コンテンツ、フォロー、アイデンティティを失うことなくホストを変更できます',
+//    icon: ArrowsUpDownIcon,
+//  },
+//]
 
 export default function Home() {
   return (
@@ -49,40 +52,78 @@ export default function Home() {
 }
 
 function FeaturesSection() {
+	const baseURL = "https://m.syui.ai/api/v1/memo?creatorId=1&tag=bluesky";
+	const [post, setPost] = React.useState(null);
+	React.useEffect(() => {
+		axios.get(baseURL).then((response) => {
+			setPost(response.data);
+		});
+	}, []);
+	const url = "https://m.syui.ai/api/v1/memo?creatorId=5&tag=bluesky";
+	const [posts, setPosts] = React.useState(null);
+	React.useEffect(() => {
+		axios.get(url).then((response) => {
+			setPosts(response.data);
+		});
+	}, []);
+	if (!post) return null;
+	if (!posts) return null;
+
   return (
     <div className="relative bg-white py-16">
       <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="text-lg font-semibold text-blue-600">Introducing</h2>
-        <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          The Social Internet
-        </p>
-        <p className="mx-auto mt-5 max-w-prose text-xl text-gray-500">
-          The AT Protocol is a networking technology created by{' '}
-          <Link href="https://blueskyweb.xyz">
-            <a className="text-blue-600 hover:underline">Bluesky</a>
-          </Link>{' '}
-          to power the next generation of social applications.
-        </p>
         <div className="mt-12">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 text-center">
-            {features.map((feature) => (
-              <div key={feature.name} className="pt-6">
+            {post.map((feature) => (
+              <div key={feature.id} className="pt-6">
                 <div className="flow-root rounded-lg bg-gray-50 px-6 pb-8">
-                  <div className="block -mt-6" href={feature.href}>
+                  <div className="block -mt-6" href={feature.id}>
                     <span>
                       <span className="inline-flex items-center justify-center rounded-md bg-blue-500 p-3 shadow-lg">
-                        <feature.icon
-                          className="h-6 w-6 text-white"
-                          aria-hidden="true"
-                        />
                       </span>
                     </span>
+																				<Link href={"https://m.syui.ai/m/" + feature.id}>
+																				<a className="text-blue-600 hover:underline">
                     <h3 className="mt-8 text-lg font-medium tracking-tight text-gray-900">
-                      {feature.name}
+                      {feature.content.split('\n', 1)}
                     </h3>
+														      </a>
+														      </Link>
                     <p className="mt-5 text-base text-gray-500">
-                      {feature.description}
+																						{moment.unix(feature.updatedTs).format("YYYY.MM.DD")}
                     </p>
+																				<Link href={"https://m.syui.ai/u/" + feature.creatorUsername}>
+																				<a className="text-blue-600 hover:underline">
+																						@{feature.creatorUsername}
+														      </a>
+														      </Link>
+                  </div>
+                </div>
+              </div>
+            ))}
+												{posts.map((feature) => (
+              <div key={feature.id} className="pt-6">
+                <div className="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                  <div className="block -mt-6" href={feature.id}>
+                    <span>
+                      <span className="inline-flex items-center justify-center rounded-md bg-blue-500 p-3 shadow-lg">
+                      </span>
+                    </span>
+																				<Link href={"https://m.syui.ai/m/" + feature.id}>
+																				<a className="text-blue-600 hover:underline">
+                    <h3 className="mt-8 text-lg font-medium tracking-tight text-gray-900">
+                      {feature.content.split('\n', 1)}
+                    </h3>
+														      </a>
+														      </Link>
+                    <p className="mt-5 text-base text-gray-500">
+																						{moment.unix(feature.updatedTs).format("YYYY.MM.DD")}
+                    </p>
+																				<Link href={"https://m.syui.ai/u/" + feature.creatorUsername}>
+																				<a className="text-blue-600 hover:underline">
+																						@{feature.creatorUsername}
+														      </a>
+														      </Link>
                   </div>
                 </div>
               </div>

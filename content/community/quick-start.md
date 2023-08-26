@@ -1,25 +1,25 @@
 ---
-title: Quick Start Guide
-summary: Get started with the atproto API.
+title: クイックスタート・ガイド
+summary: atproto APIを使い始める
 ---
 
-# Quick Start Guide
+# クイックスタート・ガイド
 
-Bluesky PBLLC maintains a TypeScript protocol implementation. The API is available for use [here](https://www.npmjs.com/package/@atproto/api?activeTab=readme).
+Bluesky PBLLCのプロトコルは`typescript`で実装されています。APIは[こちら](https://www.npmjs.com/package/@atproto/api?activeTab=readme)から利用できます。
 
-To get started with this package, install:
+このパッケージを使い始めるには、`atproto/api`をインストールしてください :
 
 ```
 npm install @atproto/api
 ```
 
-To import this package in your application, use:
+アプリケーションでこのパッケージをインポートするには、次のようにします :
 
 ```TypeScript
 import { BskyAgent } from '@atproto/api'
 ```
 
-Set your username and password as environment variables. Create a Bluesky agent and login with the below excerpt:
+ユーザー名とパスワードを環境変数に設定します。Blueskyエージェントを作成し、以下の抜粋でログインします :
 
 ```Typescript
 const agent = new BskyAgent({ service: 'https://bsky.social' })

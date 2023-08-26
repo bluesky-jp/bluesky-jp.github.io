@@ -6,37 +6,25 @@ import { faSquare } from '@fortawesome/free-solid-svg-icons'
 
 const navigation = {
   main: [
-    { name: 'Docs', href: '/docs' },
-    { name: 'Bluesky', href: 'https://blueskyweb.xyz' },
-    { name: 'Jobs', href: 'https://blueskyweb.xyz/join/' },
+    //{ name: 'docs', href: '/docs' },
+    //{ name: 'bskyjp', href: 'https://bskyjp.github.io' },
+    //{ name: 'memo', href: 'https://m.syui.ai' },
   ],
   social: [
-    {
-      name: 'Bluesky Website',
-      href: 'https://blueskyweb.xyz',
-      icon: BuildingOfficeIcon,
-    },
-    {
-      name: 'Twitter',
-      href: 'https://twitter.com/bluesky',
-      icon: ({ className }) => (
-        <FontAwesomeIcon icon={faTwitter} className={className} />
-      ),
-    },
-    {
-      name: 'GitHub',
-      href: 'https://github.com/bluesky-social',
-      icon: ({ className }) => (
-        <FontAwesomeIcon icon={faGithub} className={className} />
-      ),
-    },
-    {
-      name: 'Bluesky Social',
-      href: 'https://bsky.app/profile/bsky.app',
-      icon: ({ className }) => (
-        <FontAwesomeIcon icon={faSquare} className={className} />
-      ),
-    },
+    //{
+    //  name: 'gitHub',
+    //  href: 'https://github.com/bskyjp',
+    //  icon: ({ className }) => (
+    //    <FontAwesomeIcon icon={faGithub} className={className} />
+    //  ),
+    //},
+    //{
+    //  name: 'bluesky',
+    //  href: 'https://bsky.app/profile/syui.ai',
+    //  icon: ({ className }) => (
+    //    <FontAwesomeIcon icon={faSquare} className={className} />
+    //  ),
+    //},
   ],
 }
 
@@ -69,7 +57,7 @@ export default function Footer() {
           ))}
         </div>
         <p className="mt-8 text-center text-base text-gray-500">
-          &copy; {new Date().getFullYear()} Bluesky, PBLLC. All rights reserved.
+          &copy;Bluesky Japan
         </p>
       </div>
     </footer>

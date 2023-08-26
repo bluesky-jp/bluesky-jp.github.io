@@ -1,11 +1,13 @@
 ---
-title: Community Projects
-summary: Built by third-party community developers.
+title: コミュニティ・プロジェクト
+summary: サードパーティのコミュニティ開発者によって構築されています
 ---
 
-# Community Projects
+# コミュニティ・プロジェクト
 
-This is a partial list of community projects. Read instructions for how to submit your project to this page [here](/community/projects#submit-your-project).
+これはコミュニティ・プロジェクトの一部のリストです。このページへのプロジェクトの提出方法については、説明をお読みください。
+
+[here](/community/projects#submit-your-project).
 
 ### App Passwords
 

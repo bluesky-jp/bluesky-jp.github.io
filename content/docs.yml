@@ -1,5 +1,5 @@
 guides:
-  - name: Protocol Overview
+  - name: プロトコルの概要
     href: /guides/overview
   - name: Identity
     href: /guides/identity
@@ -64,22 +64,15 @@ lexicons:
   - name: app.bsky.richtext
     href: /lexicons/app-bsky-richtext
 community:
-  - name: Quick Start Guide
+  - name: クイックスタート
     href: /community/quick-start
-  - name: Projects
+  - name: プロジェクト
     href: /community/projects
-  - name: Groups
+  - name: グループ
     href: /community/groups
 blog:
-  - name: Updates to Repository Sync Semantics
-    href: /blog/repo-sync-update
-  - name: Posting via the Bluesky API
-    href: /blog/create-post
-  - name: "Featured Community Project: SkyFeed"
-    href: /blog/feature-skyfeed
-  - name: Call for Developers
-    href: /blog/call-for-developers
-  - name: Federation developer sandbox guidelines
-    href: /blog/federation-developer-sandbox
-  - name: Why are blocks on Bluesky public?
-    href: /blog/block-implementation
+  - name: bskyjpについて
+    href: /blog/first
+  - name: はじめてのbluesky
+    href: /blog/start
+
