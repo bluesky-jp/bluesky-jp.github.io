@@ -14,6 +14,11 @@ import { faSquare } from '@fortawesome/free-solid-svg-icons'
 
 const SiteSections = [
 	{
+		name: 'スタート',
+		href: 'https://bluesky-jp.github.io/welcome-bluesky/docs/intro',
+		icon: PencilIcon
+	},
+	{
 		name: 'ドキュメント',
 		href: '/docs',
 		icon: DocumentTextIcon,
@@ -26,11 +31,6 @@ const SiteSections = [
 	{
 		name: 'ブログ',
 		href: '/blog',
-		icon: PencilIcon
-	},
-	{
-		name: 'スタート',
-		href: 'https://bluesky-jp.github.io/welcome-bluesky/docs/intro',
 		icon: PencilIcon
 	}
 ]
