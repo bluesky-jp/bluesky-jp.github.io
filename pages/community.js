@@ -13,7 +13,7 @@ export async function getStaticProps(context) {
 }
 
 export default function Community({ navigation }) {
-  const pages = [{ name: 'atproto.com/community', href: 'https://atproto.com/docs', current: true}, { name: 'コミュニティ', href: '/community', current: true }]
+  const pages = [{ name: 'atproto.com/community', href: 'https://atproto.com/community', current: true}, { name: 'コミュニティ', href: '/community', current: true }]
   const firstPage = navigation.community[0]
   return (
     <div>
